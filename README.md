@@ -46,11 +46,17 @@ This python based tool is used to encrypt and descrypt files using advanced algo
 
 # How It Works
 1.User provides a password to encrypt or decrypt files.
+
 2.A 16-byte random salt is generated and stored with the encrypted file.
+
 3.The PBKDF2 key derivation function hashes the password and salt to generate a 256-bit key.
+
 4.The tool uses AES-256 in CBC mode with a random IV (Initialization Vector).
+
 5.The file is padded to fit AES's 16-byte block size before encryption.
+
 6.The ciphertext, IV, and salt are saved to the output file.
+
 7.During decryption, the process is reversed, ensuring accurate recovery of the original file.
 
 
