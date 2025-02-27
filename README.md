@@ -28,9 +28,13 @@ This python based tool is used to encrypt and descrypt files using advanced algo
 
 # Encypt proccess:
 1.Reads the input file.
+
 2.Generates a random 16-byte salt and 16-byte IV.
+
 3.Derives a 256-bit encryption key from the password and salt.
+
 4.Uses AES-256 (CBC mode) to encrypt the file contents.
+
 5.Saves the salt + IV + encrypted data to the output file.
 
 # Decryption Process
